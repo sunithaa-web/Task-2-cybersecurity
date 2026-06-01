@@ -1,0 +1,188 @@
+Phishing Email Analysis
+
+1. Sender's Email Address (Spoofing Check)
+
+Most samples impersonate trusted organizations such as:
+
+Google Drive
+
+Microsoft Teams
+
+Slack
+
+FedEx
+
+Bank of America
+
+Dropbox
+
+Facebook
+
+Instagram
+
+Zoom
+
+Salesforce
+
+
+Phishing Trait: The sender appears to be a legitimate company, but the actual sender address is often a fake or look-alike domain (email spoofing). For example:
+
+support@micr0soft.com instead of support@microsoft.com
+
+security@paypa1.com instead of security@paypal.com
+
+
+2. Email Header Analysis
+
+A header analyzer should be used to verify:
+
+Return-Path differs from From address.
+
+SPF authentication failures.
+
+DKIM signature failures.
+
+Suspicious relay servers.
+
+Originating IP address unrelated to the claimed organization.
+
+
+Possible Indicators Found:
+
+Mismatched sender information.
+
+Suspicious mail servers.
+
+Missing authentication records.
+
+
+3. Suspicious Links or Attachments
+
+Many samples contain:
+
+"Verify Account"
+
+"Reset Password"
+
+"Review Document"
+
+"Confirm Account"
+
+QR Codes
+
+PDF or DOC attachments
+
+
+Examples:
+
+Dropbox Login Verification Scam
+
+Slack Password Reset Scam
+
+FedEx Shipment Scam
+
+DocuSign Signature Request Scam
+
+Win an iPhone 15 QR Code Scam
+
+
+Phishing Trait: Clicking these links may redirect users to credential-stealing websites or download malware.
+
+4. Urgent or Threatening Language
+
+Several emails create pressure to act immediately:
+
+Examples:
+
+"Your account has been suspended."
+
+"Password expires in 3 days."
+
+"Unusual activity detected."
+
+"Action required immediately."
+
+"Sign-in attempt blocked."
+
+"Violation of company policy."
+
+
+Phishing Trait: Attackers use urgency to prevent users from thinking carefully.
+
+5. Mismatched URLs
+
+The visible text often appears legitimate:
+
+Example:
+
+Button text: "Verify Account"
+
+Actual URL: malicious website
+
+
+Verification Method: Hover over the link and compare:
+
+Displayed URL
+
+Actual destination URL
+
+
+If they differ, the email is suspicious.
+
+6. Spelling and Grammar Errors
+
+Common issues observed:
+
+Awkward sentence structure.
+
+Missing articles and punctuation.
+
+Unnatural wording.
+
+Generic greetings such as:
+
+"Dear User"
+
+"Hello Employee"
+
+
+
+Phishing Trait: Legitimate companies usually have professionally written communications.
+
+
+
+Summary of Phishing Traits
+
+The email samples exhibit multiple phishing characteristics:
+
+1. Brand impersonation (Google, Microsoft, FedEx, Facebook, etc.).
+
+
+2. Spoofed sender identities.
+
+
+3. Urgent or threatening language.
+
+
+4. Requests to verify accounts or reset passwords.
+
+
+5. Suspicious links, buttons, and QR codes.
+
+
+6. Unexpected attachments.
+
+
+7. Potential mismatched URLs.
+
+
+8. Generic greetings and poor writing quality.
+
+
+9. Attempts to steal credentials or personal information.
+
+
+
+Conclusion
+
+These email samples should be treated as phishing emails because they use social engineering techniques, impersonate trusted organizations, and attempt to persuade users to click malicious links, scan QR codes, open attachments, or disclose sensitive information.
